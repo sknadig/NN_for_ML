@@ -1,0 +1,5 @@
+function predictions = predict(W1,W2,X)
+  y1 = 1./(1+e.^-(X*W1));
+  predictions = y1*W2;
+  
+endfunction
